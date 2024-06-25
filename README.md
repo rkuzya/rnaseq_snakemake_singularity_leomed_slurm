@@ -1,5 +1,4 @@
-
-# RNAseq-Workflow-Snakemake-Singularity
+# RNAseq-Workflow-Snakemake-Singularity-ETHZ-LeoMed-SLURM
 
 This repository contains an RNAseq workflow implemented using Snakemake. The workflow utilizes Singularity containers, which are verified by Nexus, to ensure reproducibility and ease of deployment across different computing environments.
 
