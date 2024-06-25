@@ -30,24 +30,15 @@ The workflow includes the following steps:
 ### On the Login Node
 
 To perform a dry run on the login node to see what commands will be executed:
-
-\`\`\`bash
 snakemake -n -p
-\`\`\`
 
 To execute the workflow on the login node (not recommended for heavy computation):
-
-\`\`\`bash
 snakemake --use-singularity
-\`\`\`
 
 ### On a Slurm Cluster
 
 To submit jobs to the Slurm cluster, use the following command:
-
-\`\`\`bash
 snakemake --cluster "sbatch -N 1 -n 1 -t 60" --jobs 1 --use-singularity
-\`\`\`
 
 This command will submit the jobs to the cluster, requesting 1 node and 1 task per job, with a runtime limit of 60 minutes per job.
 
@@ -56,26 +47,12 @@ This command will submit the jobs to the cluster, requesting 1 node and 1 task p
 The workflow uses Singularity containers to encapsulate the software dependencies. The containers are verified by Nexus to ensure they are secure and reproducible.
 
 Ensure Singularity is installed and properly configured on your system. You can pull the required container images using:
-
-\`\`\`bash
 singularity pull [container_image_url]
-\`\`\`
 
 ## Configuration
 
 You can configure the samples and other parameters directly in the \`Snakefile\`:
-
-\`\`\`python
 SAMPLES = ["A", "B"]
 TRIMFILE = "/path/to/adapters.fa"
-\`\`\`
 
 Adjust the paths and sample names as necessary for your specific dataset.
-
-## Contributing
-
-Contributions are welcome. Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License.
