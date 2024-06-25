@@ -6,8 +6,7 @@ o = Openbis('https://openbis-sisrp-01.leomed.ethz.ch/openbis/webapp/eln-lims/?',
 
 import getpass
 #password = getpass.getpass()
-#o.login('admin', "changeit", save_token=True)
-o.login('rkuzyakiv', "Lozynska2457", save_token=True)
+o.login('USERNAME', "PASSWORD", save_token=True)
 
 ### TO DOWNLOAD THE DATASET from the openBIS (into the Jupyter notebook) ###
 ############################################################################
