@@ -2,8 +2,8 @@
 
 This repository contains an RNAseq workflow implemented using Snakemake. The workflow utilizes Singularity containers, which are verified by Nexus, to ensure reproducibility and ease of deployment across different computing environments.
 Actions to be done: 
-1. prapare the genome FASTA file and annotations GFF file
-2. index genome to be used by HISAT2
+1. prapare the genome FASTA file and the annotations GFF file
+2. index the genome to be used by HISAT2
 3. verify the URLs for the singularity containers
 
 ## Overview
