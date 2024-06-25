@@ -6,8 +6,7 @@ o = Openbis('https://openbis-sisrp-01.leomed.ethz.ch/openbis/webapp/eln-lims/?',
 
 import getpass
 #password = getpass.getpass()
-#o.login('admin', "changeit", save_token=True)
-o.login('rkuzyakiv', "Lozynska2457", save_token=True)
+o.login('USER_NAME', "PASSWORD", save_token=True)
 
 ### TO DOWNLOAD THE DATASETS of the certain type under the sample from the openBIS (into the Jupyter notebook) ###
 ##################################################################################################################
@@ -24,8 +23,6 @@ for dataset in datasets:
 	   workers = 10                    # 10 downloads parallel (default)
 	)
 dataset = datasets[0]
-
-
 
 ## GO TO openBIS to find the permID of the dataset you want to download
 
