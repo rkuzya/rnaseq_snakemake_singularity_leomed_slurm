@@ -1,6 +1,7 @@
 # RNAseq-Workflow-Snakemake-Singularity-ETHZ-LeoMed-SLURM
 
 This repository contains an RNAseq workflow implemented using Snakemake. The workflow utilizes Singularity containers, which are verified by Nexus, to ensure reproducibility and ease of deployment across different computing environments.
+The workflow also uses the pyBIS based python scripts to download from and upload data to  the openBIS instance. 
 Actions to be done: 
 1. prapare the genome FASTA file and the annotations GFF file
 2. index the genome to be used by HISAT2
